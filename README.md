@@ -5,7 +5,7 @@ Group R = 2349
 
 Group Members
 - [Member 1 Name] - [Roll Number] (Member 1)
-- [Member 2 Name] - i250800 (Group Leader)
+- Ayesha Hassan - i250800 (Group Leader)
 - [Member 3 Name] - [Roll Number] (Member 3)
 
 Derived Parameters
