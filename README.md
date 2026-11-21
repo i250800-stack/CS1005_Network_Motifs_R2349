@@ -40,8 +40,8 @@ Task 2 & Task 3 (Member 2's Contributions - My Work)
 
 Induced Subgraphs (T2)
 We created the induced subgraphs for Department A (ID 1) and Department B (ID 5).
-- Department A: [X] nodes and [Y] internal edges. (Fill in these numbers after running the code)
-- Department B: [X] nodes and [Y] internal edges.
+- Department A: 65 Nodes, 502 Internal Edges
+- Department B:18 Nodes, 147 Internal Edges
 
 Hand-Worked Example (T3 - Class 1, Canonical Code 3)
 Let's classify a triad where Node a sends emails to Node b and Node c (edges a->b, a->c).
