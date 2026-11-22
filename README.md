@@ -7,7 +7,7 @@ Group Members
 - Farwa Fatima - 2 (Member 1 - Dataset & Parameters)
 - Ayesha Hassan- 25i0800 (Member 2 - Subgraphs & Classification)
 - [Name 3] - [Roll Number 3] (Member 3 - Counting & Randomization)
-- [Name 4] - [Roll Number 4] (Member 4 - Analysis & Results)
+- Manaal Mehtab - 25k-0960 (Member 4 - Analysis & Results)
 
 Derived Parameters
 - R: 3309
