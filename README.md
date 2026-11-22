@@ -27,13 +27,12 @@ How to Run
 ---
 
 Task 1 (Member 1's Contributions)
-- Downloaded and loaded email-Eu-core.txt and email-Eu-core-department-labels.txt.
-- Removed 642 self-loops and 0 duplicate edges (Final cleaned edges: 24,929).
-- Calculated internal edges for all 42 departments.
-- Generated the Top-20 department ranking.
-- Calculated R = 3309 and selected Department 1 (A) and Department 5 (B).
-- Deliverables: clean_edges.csv, top20_departments.csv, parameter_report.csv.
-
+- Downloaded and loaded the email-Eu-core.txt and email-Eu-core-department-labels.txt datasets.
+- Preprocessed the data by removing all self-loops and duplicate edges, resulting in 24,929 clean edges.
+- Calculated the number of internal edges for all 42 departments.
+- Generated the Top-20 department ranking based on internal edges.
+- Calculated R = 3309 and all derived parameters (Pair number: 79, Dept A: 1, Dept B: 5, Random networks: 43, Swap multiplier: 8, Seed: 3309).
+- Deliverables: Member1_Dataset_Parameters.ipynb, clean_edges.csv, department_labels.csv, top20_departments.csv, parameter_report.csv, and the extracted department node/edge CSV files.
 ---
 
 Task 2 & Task 3 (Member 2's Contributions - My Work)
