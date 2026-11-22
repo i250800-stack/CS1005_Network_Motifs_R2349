@@ -58,21 +58,23 @@ Deliverables: Python code for subgraphs and triad_class, and hand-worked example
 
 ---
 
-Task 4 & Task 5 (Member 3's Contributions)
-- Implemented efficient triad counting for both departments.
-- Counted all 13 classes, avoiding duplicate counting.
-- Implemented randomize(edges, attempts, seed).
-- Performed double-edge swaps.
-- Verified in-degree and out-degree preservation.
-- Deliverables: Triad count tables and randomization function with assertions.
+Task 4, 5 & 6 (Member 3's Contributions)
+
+* T4 – Triad counting: counted all 13 connected triad classes in both real subgraphs (Department A, ID 1, and Department B, ID 5). For every node, all pairs of its neighbours (in either direction) are enumerated and each triple is stored as a sorted tuple in a set, so every connected 3-subset is counted exactly once. This avoids looping over all C(|V|,3) subsets.
+* Checked the counts against a brute-force loop over every 3-subset (in code, `verify_counts_bruteforce`); both agree for both departments.
+* T5 – Implemented `randomize(edges, attempts, seed)` using double-edge swaps: two edges (a,b) and (c,d) are chosen uniformly at random and replaced by (a,d) and (c,b). An attempt is rejected if a = d, c = b, (a,d) or (c,b) already exists, or the same edge is picked twice. Rejected attempts still count as attempts, and every random network starts from the original graph.
+* Verified with assertions that every node's in-degree and out-degree is unchanged, the edge count is unchanged, and there are no self-loops or duplicate edges, for all 86 random networks (43 per department).
+* Generated the 43 random networks per department. Network k (k = 0..42) uses seed R + k, so networks differ but the run is reproducible.
+* Why swaps keep degrees: (a,b) and (c,d) become (a,d) and (c,b). The sources a and c still send one edge each and the targets b and d still receive one edge each.
+* T6 – Computed the mean and population standard deviation (divide by 43; Z = 0 if the standard deviation is 0) over the random networks, and the 13 Z-scores for each department. Z > 2 is a motif and Z < −2 is an anti-motif.
+* Results: Department A has motifs 8 and 13 and anti-motifs 1, 2, 4, 5, 6, 7, 9, 10, 11, 12 (class 3 has Z = −1.999, just inside the threshold, so it is neither). Department B has motif 11 and anti-motif 1.
+* Observed triad counts (T4): Department A: 443, 174, 1074, 91, 59, 189, 266, 740, 1, 50, 61, 370, 385. Department B: 8, 20, 61, 12, 11, 22, 39, 62, 0, 28, 29, 105, 78.
+* Deliverables: `member3.py`, `member3_T4_triad_counts.csv`, `member4_Z_table_A.csv`, `member4_Z_table_B.csv`, `member4_z_scores.csv`, `member3_random_network_counts.csv`.
 
 ---
 
-Task 6, 7 & 8 (Member 4's Contributions)
-- Generated 43 random networks using Member 3's function.
-- Calculated mean and population standard deviation.
-- Calculated Z-scores for both departments.
-- Identified motifs (Z > 2) and anti-motifs (Z < -2).
-- Created grouped bar chart with ±2 dashed lines.
-- Compared communication patterns of both departments.
-- Deliverables: Z-score tables, chart, and comparison paragraph.
+Task 7 & 8 (Member 4's Contributions)
+
+* T7 – Created the grouped bar chart from Member 3's Z-scores (`member4_z_scores.csv`): x = classes 1–13, two bars per class (Department A and Department B), with dashed lines at +2 and −2. The chart title includes R = 3309.
+* T8 – Wrote the comparison of how the two departments communicate differently and which motifs explain it. This paragraph was discussed and written together by all members.
+* Deliverables: grouped bar chart (T7) and comparison paragraph (T8).
