@@ -74,6 +74,18 @@ Task 6, 7 & 8 (Member 4's Contributions)
 * T6 – Computed the mean and population standard deviation (divide by 43; Z = 0 if the standard deviation is 0) over the random networks, and the 13 Z-scores for each department. Z > 2 is a motif and Z < −2 is an anti-motif.
 * Results: Department A has motifs 8 and 13 and anti-motifs 1, 2, 4, 5, 6, 7, 9, 10, 11, 12 (class 3 has Z = −1.999, just inside the threshold, so it is neither). Department B has motif 11 and anti-motif 1.
 * Observed triad counts (T4): Department A: 443, 174, 1074, 91, 59, 189, 266, 740, 1, 50, 61, 370, 385. Department B: 8, 20, 61, 12, 11, 22, 39, 62, 0, 28, 29, 105, 78.
-* T7 – Created the grouped bar chart from the T6 Z-scores (`member4_z_scores.csv`): x = classes 1–13, two bars per class (Department A and Department B), with dashed lines at +2 and −2. The chart title includes R = 3309.
+* T7 – Created the grouped bar chart from the T6 Z-scores (`member4_z_scores.csv`): x = classes 1–13, two bars per class (Department A and Department B), with dashed lines at +2 and −2. The chart title includes R = 3309. The figure is saved as `chart.png` and shown below.
 * T8 – Wrote the comparison of how the two departments communicate differently and which motifs explain it. This paragraph was discussed and written together by all members.
-* Deliverables: `member4_Z_table_A.csv`, `member4_Z_table_B.csv`, `member4_z_scores.csv` (T6), grouped bar chart (T7) and comparison paragraph (T8).
+* Deliverables: `member4_Z_table_A.csv`, `member4_Z_table_B.csv`, `member4_z_scores.csv` (T6), grouped bar chart (`chart.png`, T7) and comparison paragraph (T8).
+
+---
+
+Z-score Chart (T7)
+
+![Grouped bar chart of the 13 triad Z-scores for Department A and Department B, with dashed lines at +2 and -2 (R = 3309)](chart.png)
+
+---
+
+Comparison of Communication Patterns (T8)
+
+Department 1 (A) and Department 5 (B) communicate in quite different ways. Department A has two motifs, class 13 and class 8. In class 13, all three people email each other in both directions, and in class 8, one person has two-way conversations with two others who do not email each other. Both patterns are made of replies, so people in Department A often talk back and forth in close groups, and this happens far more than chance would explain (Z = 11.8 and Z = 10.5). At the same time, Department A has ten anti-motifs (classes 1, 2, 4, 5, 6, 7, 9, 10, 11 and 12). Simple patterns such as one person emailing two others (class 1) or a plain chain of one-way emails (class 2) appear much less often than in the random networks. Department B is smaller and looks much closer to random: only class 11 is a motif (Z = 2.25), only class 1 is an anti-motif (Z = -3.17), and every other class stays between -2 and 2. Class 11 is a pair of people who email each other both ways, plus a third person who emails both of them but never gets an email back. So Department B has a few cases where one person writes to a pair who already talk to each other. In short, Department A works like a closely connected team where replies are common, while Department B shows no strong pattern apart from these two small differences.
