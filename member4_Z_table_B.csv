@@ -1,0 +1,14 @@
+department,department_id,class,observed_count,random_mean,population_std_dev,z_score,interpretation
+B,5,1,8,17.1395,2.882,-3.1712,Anti-motif
+B,5,2,20,24.5814,5.5121,-0.8312,Neither
+B,5,3,61,53.6279,6.2021,1.1886,Neither
+B,5,4,12,16.7674,4.3016,-1.1083,Neither
+B,5,5,11,20.814,5.3841,-1.8228,Neither
+B,5,6,22,23.5581,4.178,-0.3729,Neither
+B,5,7,39,45.8605,5.7651,-1.19,Neither
+B,5,8,62,45.2791,9.5755,1.7462,Neither
+B,5,9,0,3.4419,1.9565,-1.7592,Neither
+B,5,10,28,36.4419,8.4063,-1.0042,Neither
+B,5,11,29,20.6977,3.695,2.2469,Motif
+B,5,12,105,116.8605,7.0598,-1.68,Neither
+B,5,13,78,70.7209,5.2885,1.3764,Neither
