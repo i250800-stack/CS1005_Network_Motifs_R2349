@@ -22,7 +22,7 @@ How to Run
 1. Run Member 1's notebook to generate clean_edges.csv and department_labels.csv.
 2. Run Member 2's Python script to generate the induced subgraphs and classifications.
 3. Run Member 3's Python script for counting and randomization.
-4. Run Member 4's Python script for Z-scores and the chart.
+4. Run Member 4's Python script for the Z-scores (T6). The T7 chart is made in Excel from member4_z_scores.csv (member4_T7_chart.xlsx).
 
 ---
 
@@ -74,9 +74,9 @@ Task 6, 7 & 8 (Member 4's Contributions)
 * T6 – Computed the mean and population standard deviation (divide by 43; Z = 0 if the standard deviation is 0) over the random networks, and the 13 Z-scores for each department. Z > 2 is a motif and Z < −2 is an anti-motif.
 * Results: Department A has motifs 8 and 13 and anti-motifs 1, 2, 4, 5, 6, 7, 9, 10, 11, 12 (class 3 has Z = −1.999, just inside the threshold, so it is neither). Department B has motif 11 and anti-motif 1.
 * Observed triad counts (T4): Department A: 443, 174, 1074, 91, 59, 189, 266, 740, 1, 50, 61, 370, 385. Department B: 8, 20, 61, 12, 11, 22, 39, 62, 0, 28, 29, 105, 78.
-* T7 – Created the grouped bar chart from the T6 Z-scores (`member4_z_scores.csv`): x = classes 1–13, two bars per class (Department A and Department B), with dashed lines at +2 and −2. The chart title includes R = 3309. The figure is saved as `chart.png` and shown below.
+* T7 – Created the grouped bar chart in Excel from the T6 Z-scores (`member4_z_scores.csv`): x = classes 1–13, two bars per class (Department A and Department B), with dashed lines at +2 and −2. The chart title includes R = 3309. The figure is saved as `chart.png` and shown below.
 * T8 – Wrote the comparison of how the two departments communicate differently and which motifs explain it. This paragraph was discussed and written together by all members.
-* Deliverables: `member4_Z_table_A.csv`, `member4_Z_table_B.csv`, `member4_z_scores.csv` (T6), grouped bar chart (`chart.png`, T7) and comparison paragraph (T8).
+* Deliverables: `member4.py`, `member4_Z_table_A.csv`, `member4_Z_table_B.csv`, `member4_z_scores.csv` (T6), grouped bar chart (`member4_T7_chart.xlsx`, `chart.png`, T7) and comparison paragraph (T8).
 
 ---
 
