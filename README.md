@@ -4,9 +4,9 @@ Finding Network Motifs in an Email Network
 Group R = 3309
 
 Group Members
-- Farwa Fatima - 2 (Member 1 - Dataset & Parameters)
-- Ayesha Hassan- 25i0800 (Member 2 - Subgraphs & Classification)
-- [Name 3] - [Roll Number 3] (Member 3 - Counting & Randomization)
+- Farwa Fatima - 25k-0870 (Member 1 - Dataset & Parameters)
+- Ayesha Hassan- 25i-0800 (Member 2 - Subgraphs & Classification)
+- Javeria Yasir- 25i-0679(Member 3 - Counting & Randomization)
 - Manaal Mehtab - 25k-0960 (Member 4 - Analysis & Results)
 
 Derived Parameters
