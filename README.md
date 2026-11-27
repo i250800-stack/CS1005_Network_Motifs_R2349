@@ -46,11 +46,11 @@ Hand-Worked Example (T3 - Class 1, Canonical Code 3)
 Let's classify a triad where Node a sends emails to Node b and Node c (edges a->b, a->c).
 1. Order (a, b, c): a->b is Bit 0, a->c is Bit 1. Code = 3.
 2. Order (a, c, b): a->c is Bit 0, a->b is Bit 1. Code = 3.
-3. Order (b, a, c): No matching edges. Code = 0.
-4. Order (b, c, a): No matching edges. Code = 0.
-5. Order (c, a, b): No matching edges. Code = 0.
-6. Order (c, b, a): No matching edges. Code = 0.
-The minimum code across all 6 permutations is 3. According to the project statement, Code 3 maps to Class 1.
+3. Order (b, a, c): a->b is Bit 2, a->c is Bit 3. Code = 4 + 8 = 12.
+4. Order (b, c, a): a->b is Bit 4, a->c is Bit 5. Code = 16 + 32 = 48.
+5. Order (c, a, b): a->c is Bit 2, a->b is Bit 3. Code = 4 + 8 = 12.
+6. Order (c, b, a): a->c is Bit 4, a->b is Bit 5. Code = 16 + 32 = 48.
+The six codes are 3, 3, 12, 48, 12, 48. The minimum code across all 6 permutations is 3. According to the project statement, Code 3 maps to Class 1.
 
 Triad Classification Function (T3)
 We implemented triad_class(a, b, c) in Python, which generates the canonical code for any given triad by checking all 6 node permutations and mapping the minimum code to one of the 13 connected classes. We included a 4-test verification function in the code which successfully passes.
